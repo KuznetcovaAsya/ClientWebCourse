@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FEEED6;
+    font-family: sans-serif;
+    color: #676565;
+}
+
+.page {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.625em;
+}
+
+.header {
+    font-size: 1.75em;
+    font-weight: normal;
+    margin: 0.25em 0;
+}
+
+.specification {
+    color: #378db2;
+    font-size: 1.06em;
+    font-weight: bold;
+}
+
+.specification-value {
+    font-size: 1.06em;
+}
+
+.cross-out {
+    font-size: 0.94em;
+    text-decoration-line: line-through;
+}
+
+.main {
+    line-height: 1.8em;
+    margin: 0;
+}
+
+.main div:last-child {
+    margin-top: 0.3em;
+}
+
+.information {
+    font-size: 0.96em;
+    text-align: justify;
+    text-indent: 0.94em;
+    margin: 0;
+    line-height: 1.4em;
+}
+
+.information p {
+    margin: 0.7em 0 0.7em 0;
+}
+
+.information p:first-child {
+    margin: 0 0 0.7em 0;
+}

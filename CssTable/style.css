@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #CCCCCC;
+    font-family: sans-serif;
+    max-width: 750px;
+    max-height: 270px;
+}
+
+
+
+tbody tr:nth-child(odd) {
+    background-color: #EEEEEE;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+thead th {
+    border: 1px solid #CCCCCC;
+    background-color: #3498DB;
+    color: #FEFEFF;
+}
+
+tbody td {
+    border: 1px solid #CCCCCC;
+    padding-left: 10px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 14px;
+}
