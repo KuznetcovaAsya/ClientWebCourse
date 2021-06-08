@@ -6,11 +6,27 @@ table {
     border-collapse: collapse;
     border: 1px solid #CCCCCC;
     font-family: sans-serif;
+    font-size: 1.1em;
+    width: 100%;
     max-width: 750px;
-    max-height: 270px;
+    max-height: 271px;
 }
 
+.col1 {
+    width: 20.4%;
+}
 
+.col2 {
+    width: 20.2%;
+}
+
+.col3 {
+    width: 36%;
+}
+
+.col41 {
+    width: 23.3%;
+}
 
 tbody tr:nth-child(odd) {
     background-color: #EEEEEE;
@@ -24,12 +40,18 @@ thead th {
     border: 1px solid #CCCCCC;
     background-color: #3498DB;
     color: #FEFEFF;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 0.52em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    height: 45px;
 }
 
 tbody td {
     border: 1px solid #CCCCCC;
-    padding-left: 10px;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    font-size: 14px;
+    padding-left: 0.52em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    height: 45px;
 }
