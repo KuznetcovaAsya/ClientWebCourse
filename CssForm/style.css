@@ -16,8 +16,8 @@ body {
 }
 
 .header {
-    max-width: 750px;
-    font-size: 1.85em;
+    max-width: 736px;
+    font-size: 2em;
     font-weight: normal;
     margin: 0.15em auto;
     padding-left: 0.6em;
@@ -26,8 +26,8 @@ body {
 .form {
     margin-left: auto;
     margin-right: auto;
-    padding: 0.1em 1.125em 1em 1.125em;
-    max-width: 750px;
+    padding: 0.1em 1.2em 1em 1.2em;
+    max-width: 736px;
     width: 100%;
 }
 
@@ -39,39 +39,39 @@ body {
 }
 
 .field {
-    display: block;
     width: 100%;
     height: 34px;
-    border: none;
     margin-top: 0.5em;
     padding-top: 0.2em;
-    margin-bottom: 1.32em;
+    padding-left: 0.4em;
+    padding-right: 0.6em;
+    margin-bottom: 0.1em;
+    border: none;
+    outline: none;
+    text-indent: 0.35em;
+}
+
+.field::placeholder {
+    color: #a6b5b3;
+    font-size: 1em;
 }
 
 .comment-field {
     height: 112px;
     max-width: 100%;
     min-width: 100%;
-    padding-left: 0.15em;
+    padding-left: 0.4em;
+    padding-right: 0.6em;
     padding-top: 0.8em;
     margin-top: 0.5em;
     border: none;
+    outline: none;
+    text-indent: 0.35em;
 }
 
-::placeholder {
+.comment-field::placeholder {
     color: #a6b5b3;
     font-size: 1em;
-}
-
-input {
-    outline: none;
-    text-indent: 0.6em;
-}
-
-textarea {
-    outline: none;
-    text-indent: 0.6em;
-    padding-top: 1em;
 }
 
 .text {
@@ -86,8 +86,13 @@ textarea {
     border: none;
     font-weight: bold;
     font-size: 1em;
-    width: 148px;
+    width: 149px;
     height: 33px;
     margin-left: auto;
-    margin-top: 0.7em;
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #32728d;
 }
