@@ -2,14 +2,19 @@
     box-sizing: border-box;
 }
 
-table {
+.main {
+    max-width: 786px;
+    padding: 18px;
+}
+
+.table {
     border-collapse: collapse;
     border: 1px solid #CCC;
     font-family: sans-serif;
     font-size: 1.1em;
     max-width: 750px;
     width: 100%;
-    margin: 1em;
+    margin: auto;
 }
 
 .first-name th td {
@@ -28,15 +33,15 @@ table {
     width: 23.3%;
 }
 
-.odd tr:nth-child(odd) {
+.table tr:nth-child(odd) {
     background-color: #EEE;
 }
 
-.even tr:nth-child(even) {
+.table tr:nth-child(even) {
     background-color: #FFF;
 }
 
-.table-head th {
+.table th {
     border: 1px solid #CCC;
     background-color: #3498DB;
     color: #FEFEFF;
@@ -45,7 +50,7 @@ table {
     padding: 0.72em 0.52em 0.65em 0.52em;
 }
 
-.table-detail td {
+.table td {
     border: 1px solid #CCC;
     padding: 0.72em 0.52em 0.65em 0.52em;
 }
