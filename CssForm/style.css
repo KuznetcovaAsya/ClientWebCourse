@@ -4,9 +4,8 @@
 
 body {
     color: #696b6f;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 0.9em;
-    font-weight: normal;
     margin-left: auto;
     margin-right: auto;
 }
@@ -17,35 +16,34 @@ body {
 
 .header {
     max-width: 736px;
-    font-size: 2em;
+    font-size: 2.045em;
     font-weight: normal;
     margin: 0.15em auto;
     padding-left: 0.6em;
+    padding-right: 0.6em;
 }
 
 .form {
     margin-left: auto;
     margin-right: auto;
-    padding: 0.1em 1.2em 1em 1.2em;
+    padding: 0.1em 1.2em 0.95em 1.2em;
     max-width: 736px;
     width: 100%;
 }
 
 .label {
     font-weight: bold;
-    font-size: 0.95em;
-    margin-top: 1.2em;
+    font-size: 0.98em;
+    margin-top: 1.08em;
     display: block;
 }
 
 .field {
     width: 100%;
     height: 34px;
-    margin-top: 0.5em;
-    padding-top: 0.2em;
-    padding-left: 0.4em;
-    padding-right: 0.6em;
-    margin-bottom: 0.1em;
+    padding: 0.2em 0.4em;
+    margin-top: 0.45em;
+    margin-bottom: 0.2em;
     border: none;
     outline: none;
     text-indent: 0.35em;
@@ -53,17 +51,14 @@ body {
 
 .field::placeholder {
     color: #a6b5b3;
-    font-size: 1em;
+    font-size: 0.98em;
 }
 
 .comment-field {
     height: 112px;
-    max-width: 100%;
-    min-width: 100%;
-    padding-left: 0.4em;
-    padding-right: 0.6em;
-    padding-top: 0.8em;
-    margin-top: 0.5em;
+    width: 100%;
+    padding: 0.5em 0.4em;
+    margin-top: 0.45em;
     border: none;
     outline: none;
     text-indent: 0.35em;
@@ -71,12 +66,12 @@ body {
 
 .comment-field::placeholder {
     color: #a6b5b3;
-    font-size: 1em;
+    font-size: 0.97em;
 }
 
 .text {
-    font-size: 1em;
-    margin-top: 15px;
+    font-size: 0.98em;
+    margin-top: 14px;
 }
 
 .submit {
@@ -85,11 +80,10 @@ body {
     color: #fff;
     border: none;
     font-weight: bold;
-    font-size: 1em;
-    width: 149px;
-    height: 33px;
+    font-size: 0.98em;
+    padding: 0.58em 0.8em;
     margin-left: auto;
-    margin-top: 0.8em;
+    margin-top: 0.85em;
     cursor: pointer;
 }
 
