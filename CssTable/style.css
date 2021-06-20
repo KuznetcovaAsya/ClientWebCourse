@@ -3,7 +3,7 @@
 }
 
 .main {
-    max-width: 786px;
+    max-width: 787px;
     padding: 18px;
 }
 
@@ -12,25 +12,23 @@
     border: 1px solid #CCC;
     font-family: sans-serif;
     font-size: 1.1em;
-    max-width: 750px;
     width: 100%;
-    margin: auto;
 }
 
-.first-name th td {
+.first-name {
     width: 20.4%;
 }
 
-.last-name th td {
+.last-name {
     width: 20.2%;
 }
 
-.job-title th td {
+.job-title {
     width: 36%;
 }
 
-.twitter th td {
-    width: 23.3%;
+.twitter {
+    width: 23.4%;
 }
 
 .table tr:nth-child(odd) {
@@ -45,12 +43,14 @@
     border: 1px solid #CCC;
     background-color: #3498DB;
     color: #FEFEFF;
+    font-size: 1.06em;
     font-weight: normal;
     text-align: left;
-    padding: 0.72em 0.52em 0.65em 0.52em;
+    padding: 0.67em 0.5em 0.59em 0.5em;
 }
 
 .table td {
     border: 1px solid #CCC;
-    padding: 0.72em 0.52em 0.65em 0.52em;
+    padding: 0.71em 0.52em 0.65em 0.52em;
+    font-size: 1.01em;
 }
