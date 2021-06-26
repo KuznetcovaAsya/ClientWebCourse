@@ -69,11 +69,21 @@ var countries = [
     }
 ]
 
-console.log(countries.filter());
+function getMaxCitiesCount(countries) {
+    var maxCitiesCount = 0;
+    var maxCitiesCountCountries = [];
 
+    countries.forEach(function (country) {
+        if (country.cities.length > maxCitiesCount) {
+            maxCitiesCount = country.cities.length;
+            maxCitiesCountCountries.push(country);
+        } else if (country.cities.length === maxCitiesCount) {
+            maxCitiesCountCountries.push(country);
+        }
+    });
 
+    return maxCitiesCountCountries;
+}
 
-
-
-
-
+console.log("Страны с максимальным количеством городов: ");
+console.log(getMaxCitiesCount(countries));
