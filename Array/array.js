@@ -17,7 +17,7 @@ var evenNumbersSum = array1.filter(function (e) {
     return e % 2 === 0;
 }).reduce(function (sum, current) {
     return sum + current;
-});
+}, 0);
 
 console.log("Cумма четных чисел Mассива 1: " + evenNumbersSum);
 
