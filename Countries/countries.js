@@ -90,7 +90,7 @@
     console.log(getMaxCitiesCountCountries(countries));
 
     function getCountriesPopulation(countries) {
-        var countriesPopulation = new Object();
+        var countriesPopulation = {};
 
         function getCountryPopulation(country) {
             return country.cities.reduce(function (population, city) {
