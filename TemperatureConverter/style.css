@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+.converter {
+    max-width: 600px;
+    border: 1px solid grey;
+    background-color: #f1f3f4;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.main {
+    margin: 20px;
+}
+
+.row {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.label {
+    margin: 5px;
+    flex: 1;
+    font-size: 0.9em;
+}
+
+.input-field {
+    display: flex;
+    flex: 2;
+    background-color: #f1f3f4;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    border: 1px solid black;
+    max-width: 350px;
+    cursor: auto;
+}
+
+.input-field::placeholder {
+    font-size: 0.6em;
+}
+
+.result {
+    border: 1px solid lightgrey;
+    flex: 2;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    max-width: 350px;
+}
+
+#button {
+    display: block;
+    margin: 5px auto;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#error-message {
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
