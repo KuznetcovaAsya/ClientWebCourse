@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("button").addEventListener("click", function () {
         var celsiusTemperature = inputFieldText.value;
+        var chars = celsiusTemperature.split('');
 
         if (isNaN(celsiusTemperature) || celsiusTemperature === "") {
             errorMessage.textContent = "Введите число"
