@@ -50,14 +50,14 @@
     max-width: 350px;
 }
 
-#button {
+.button {
     display: block;
     margin: 5px auto;
     font-size: 30px;
     cursor: pointer;
 }
 
-#error-message {
+.error-message {
     text-align: center;
     color: red;
     font-size: 30px;
