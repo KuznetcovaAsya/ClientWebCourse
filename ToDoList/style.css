@@ -15,11 +15,11 @@ body {
     font-weight: bold;
 }
 
-#list li {
+.list li {
     margin-top: 5px;
 }
 
-#list button {
+.list button {
     margin-top: 5px;
     margin-left: 5px;
 }

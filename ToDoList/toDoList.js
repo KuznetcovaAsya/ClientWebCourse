@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var inputTextField = document.getElementById("input-text-field");
-    var list = document.getElementById("list");
+    var list = document.querySelector(".list");
     var errorMessage = document.querySelector(".error-message");
 
     document.getElementById("button").addEventListener("click", function () {
