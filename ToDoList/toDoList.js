@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var list = document.querySelector(".list");
     var errorMessage = document.querySelector(".error-message");
 
-    document.getElementById("button").addEventListener("click", function () {
-        var text = inputTextField.value;
+    document.getElementById("add-button").addEventListener("click", function () {
+        var text = inputTextField.value.trim();
         var savedTextBeforeCancel;
 
         if (text === "") {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 savedTextBeforeCancel = text;
 
                 listItem.querySelector(".save-button").addEventListener("click", function () {
-                    text = listItem.querySelector(".edit-text").value;
+                    text = listItem.querySelector(".edit-text").value.trim();
 
                     if (text === "") {
                         errorMessage.textContent = "Please enter text";
