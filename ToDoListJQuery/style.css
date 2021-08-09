@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+}
+
+.form {
+    margin-left: 10px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.list li {
+    margin-top: 5px;
+}
+
+.list button {
+    margin-top: 5px;
+    margin-left: 5px;
+}
