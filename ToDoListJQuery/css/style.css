@@ -10,7 +10,7 @@ body {
     margin-left: 10px;
 }
 
-.error-message {
+.add-error-message, .edit-error-message {
     color: red;
     font-weight: bold;
 }
