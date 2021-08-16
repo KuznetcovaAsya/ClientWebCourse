@@ -68,7 +68,7 @@ $(document).ready(function () {
                 listItem.find(".cancel-button").click(function () {
                     clearAddErrorMessage();
                     clearEditErrorMessage();
-                    
+
                     text = savedTextBeforeCancel;
                     setViewMode();
                 });

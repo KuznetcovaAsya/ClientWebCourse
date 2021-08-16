@@ -7,19 +7,23 @@ document.addEventListener("DOMContentLoaded", function () {
         var savedTextBeforeCancel;
 
         function clearAddErrorMessage() {
-            if (document.querySelector(".form").contains(document.querySelector(".add-error-message"))) {
-                document.querySelector(".add-error-message").remove();
+            var addErrorMessage = document.querySelector(".add-error-message");
+
+            if (addErrorMessage != null) {
+                addErrorMessage.parentNode.removeChild(addErrorMessage);
             }
         }
 
         function clearEditErrorMessage() {
-            if (document.querySelector(".list").contains(document.querySelector(".edit-error-message"))) {
-                document.querySelector(".edit-error-message").remove();
+            var editErrorMessage = listItem.querySelector(".edit-error-message");
+
+            if (editErrorMessage != null) {
+                editErrorMessage.parentNode.removeChild(editErrorMessage);
             }
         }
 
         if (text === "") {
-            if (!document.querySelector(".form").contains(document.querySelector(".add-error-message"))) {
+            if (document.querySelector(".add-error-message") === null) {
                 var addErrorMessage = document.createElement("div");
                 addErrorMessage.className = "add-error-message";
                 addErrorMessage.textContent = "Please enter text";
@@ -53,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     text = listItem.querySelector(".edit-text").value.trim();
 
                     if (text === "") {
-                        if (!document.querySelector(".list").contains(document.querySelector(".edit-error-message"))) {
+                        if (listItem.querySelector(".edit-error-message") === null) {
                             var editErrorMessage = document.createElement("div");
                             editErrorMessage.className = "edit-error-message";
                             editErrorMessage.textContent = "Please enter text";
-                            listItem.after(editErrorMessage);
+                            listItem.append(editErrorMessage);
                         }
 
                         return;
