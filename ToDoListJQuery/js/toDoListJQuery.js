@@ -7,19 +7,23 @@ $(document).ready(function () {
         var savedTextBeforeCancel;
 
         function clearAddErrorMessage() {
-            if ($("div").hasClass("add-error-message")) {
-                $(".add-error-message").remove();
+            var addErrorMessage = $(".form").find(".add-error-message");
+
+            if (addErrorMessage.length) {
+                addErrorMessage.remove();
             }
         }
 
         function clearEditErrorMessage() {
-            if ($("div").hasClass("edit-error-message")) {
-                $(".edit-error-message").remove();
+            var editErrorMessage = listItem.find(".edit-error-message");
+
+            if (editErrorMessage) {
+                editErrorMessage.remove();
             }
         }
 
         if (text === "") {
-            if (!$("div").hasClass("add-error-message")) {
+            if (!$(".form").find(".add-error-message").length) {
                 var addErrorMessage = $("<div class=\"add-error-message\">Please enter text</div>");
                 list.before(addErrorMessage);
             }
@@ -51,9 +55,9 @@ $(document).ready(function () {
                     text = listItem.find(".edit-text").val().trim();
 
                     if (text === "") {
-                        if (!$("div").hasClass("edit-error-message")) {
+                        if (!listItem.find(".edit-error-message").length) {
                             var editErrorMessage = $("<div class=\"edit-error-message\">Please enter text</div>");
-                            listItem.after(editErrorMessage);
+                            listItem.append(editErrorMessage);
                         }
 
                         return;
