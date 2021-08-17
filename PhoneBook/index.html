@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Телефонная книга</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-confirm.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/jquery-3.6.0.js"></script>
+    <script defer src="js/jquery-ui.js"></script>
+    <script defer src="js/jquery.maskedinput.min.js"></script>
+    <script defer src="js/jquery-confirm.js"></script>
+    <script defer src="js/phoneBook.js"></script>
+</head>
+<body>
+<form class="form">
+    <header class="header">Телефонная книга</header>
+    <div class="input-field">
+        <label for="last-name-input-field" class="label last-name-label">Фамилия
+            <input type="text" id="last-name-input-field" class="field input-words" placeholder="Введите фамилию">
+        </label>
+        <div class="last-name-error-message"></div>
+        <label for="first-name-input-field" class="label first-name-label">Имя
+            <input type="text" id="first-name-input-field" class="field input-words" placeholder="Введите имя">
+        </label>
+        <div class="first-name-error-message"></div>
+        <label for="phone-number-input-field" class="label phone-number-label">Номер телефона
+            <input type="tel" id="phone-number-input-field" class="field" placeholder="Введите номер телефона">
+        </label>
+        <div class="phone-number-error-message"></div>
+    </div>
+    <div>
+        <button type="button" class="add-button">Добавить</button>
+    </div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Номер телефона</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

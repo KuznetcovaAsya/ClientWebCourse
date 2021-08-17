@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+.form {
+    max-width: 600px;
+    margin: 10px;
+    font-size: 22px;
+}
+
+.header {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.input-field input {
+    max-width: 100%;
+    min-width: 100%;
+    display: block;
+    margin: 5px 0;
+    padding: 5px 5px;
+}
+
+.input-field input::placeholder {
+    font-size: 15px;
+}
+
+.input-field label {
+    display: block;
+    margin-top: 15px;
+}
+
+.last-name-error-message, .first-name-error-message, .phone-number-error-message {
+    font-size: 18px;
+    color: red;
+}
+
+.add-button {
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-top: 20px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.table th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+}
+
+.table td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+}
