@@ -88,39 +88,39 @@ $(document).ready(function () {
                 "            <td class='phone-number'></td>\n" +
                 "            <td><button type='button' class='delete-button'>X</button></td>");
 
+            table.append(tableRow);
+
             tableRow.find(".sequence-number").text($(".table >tbody >tr").length);
             tableRow.find(".last-name").text(lastNameText);
             tableRow.find(".first-name").text(firstNameText);
             tableRow.find(".phone-number").text(phoneNumberText);
 
-            table.append(tableRow);
-
             lastNameInputField.val("");
             firstNameInputField.val("");
             phoneNumberInputField.val("");
-        }
 
-        function recalculateSequenceNumber() {
-            $(".sequence-number").each(function (i) {
-                $(this).text(i + 1);
+            function recalculateSequenceNumber() {
+                $(".sequence-number").each(function (i) {
+                    $(this).text(i + 1);
+                });
+            }
+
+            $(".delete-button").click(function () {
+                $(this).parent().parent().remove();
+                recalculateSequenceNumber();
+
+                /*$.confirm({
+                    title: "Удаление",
+                    content: "Удалить контакт?",
+                    buttons: {
+                        "Да": function () {
+                            tableRow.remove();
+                        },
+                        "Отмена": function () {
+                        },
+                    }
+                });*/
             });
         }
-
-        $(".delete-button").click(function () {
-            $(this).parent().parent().remove();
-            recalculateSequenceNumber();
-
-            /*$.confirm({
-                title: "Удаление",
-                content: "Удалить контакт?",
-                buttons: {
-                    "Да": function () {
-                        tableRow.remove();
-                    },
-                    "Отмена": function () {
-                    },
-                }
-            });*/
-        });
     });
 });
