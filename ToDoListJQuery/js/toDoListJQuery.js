@@ -7,23 +7,15 @@ $(document).ready(function () {
         var savedTextBeforeCancel;
 
         function clearAddErrorMessage() {
-            var addErrorMessage = $(".form").find(".add-error-message");
-
-            if (addErrorMessage.length) {
-                addErrorMessage.remove();
-            }
+            $(".form").find(".add-error-message").remove();
         }
 
         function clearEditErrorMessage() {
-            var editErrorMessage = listItem.find(".edit-error-message");
-
-            if (editErrorMessage) {
-                editErrorMessage.remove();
-            }
+            listItem.find(".edit-error-message").remove();
         }
 
         if (text === "") {
-            if (!$(".form").find(".add-error-message").length) {
+            if (!$(".form").find(".add-error-message").length > 0) {
                 var addErrorMessage = $("<div class=\"add-error-message\">Please enter text</div>");
                 list.before(addErrorMessage);
             }
@@ -55,7 +47,7 @@ $(document).ready(function () {
                     text = listItem.find(".edit-text").val().trim();
 
                     if (text === "") {
-                        if (!listItem.find(".edit-error-message").length) {
+                        if (!listItem.find(".edit-error-message").length > 0) {
                             var editErrorMessage = $("<div class=\"edit-error-message\">Please enter text</div>");
                             listItem.append(editErrorMessage);
                         }
