@@ -15,7 +15,7 @@ $(document).ready(function () {
         }
 
         if (text === "") {
-            if (!$(".form").find(".add-error-message").length > 0) {
+            if ($(".form").find(".add-error-message").length === 0) {
                 var addErrorMessage = $("<div class=\"add-error-message\">Please enter text</div>");
                 list.before(addErrorMessage);
             }
@@ -47,7 +47,7 @@ $(document).ready(function () {
                     text = listItem.find(".edit-text").val().trim();
 
                     if (text === "") {
-                        if (!listItem.find(".edit-error-message").length > 0) {
+                        if (listItem.find(".edit-error-message").length === 0) {
                             var editErrorMessage = $("<div class=\"edit-error-message\">Please enter text</div>");
                             listItem.append(editErrorMessage);
                         }
